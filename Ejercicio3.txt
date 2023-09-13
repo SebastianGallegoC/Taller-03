@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+  string viuda;
+  int chijos,ee;
+  float ptotal = 0;
+  cout << "Usted es viuda?" << endl;
+  cin >> viuda;
+  cout << "Cuántos hijos tiene?" << endl;
+  cin >> chijos;
+  cout << "Cuántos de sus hijos estan en edad escolar?" << endl;
+  cin >> ee;
+  if ((chijos == 2)||(chijos == 1)) {
+    ptotal = ptotal + 70000;
+  } else if ((chijos <=5)&(chijos >=3)) {
+    ptotal = ptotal + 90000;
+  } else if (chijos >= 6) {
+    ptotal = ptotal + 120000;
+  }
+  ptotal = (ee * 10000) + ptotal;
+  if (viuda == ("si")||("SI")) {
+    ptotal = ptotal + 20000;
+  }
+  cout << "Pago subsidio = $" << ptotal;
+  return 0;
+}

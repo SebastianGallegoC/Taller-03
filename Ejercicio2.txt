@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float pies,metros,pulgadas,yardas,metros2,millas;
+  cout << "Ingrese una medida en pies y otra en metros para sumarlas" << endl;
+  cout << "Pies = ";
+  cin >> pies;
+  cout << "Metros = ";
+  cin >> metros;
+  pulgadas = (pies * 12) + (metros * 39.37);
+  cout << "Pulgadas = " << pulgadas << endl;
+  yardas = pulgadas / 36;
+  cout << "Yardas = " << yardas << endl;
+  metros2 = pulgadas / 39.37;
+  cout << "Metros = " << metros2 << endl;
+  millas = pulgadas / 63360;
+  cout << "Millas = " << millas << endl;
+  return 0;
+}

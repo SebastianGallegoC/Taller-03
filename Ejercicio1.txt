@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float min,horas2,seg,seg2,min2;
+  int i = 1;
+  cout << "2 atletas recorren 20km" << endl;
+    for (i = 1; i <= 2; i++){
+      cout << "Ingrese cuantos minutos se demoro el atleta " << i << endl;
+      cin >> min;
+      cout << "Ahora ingrese los segundos " << endl;
+      cin >> seg;
+      min2 = min + (seg / 60);
+      horas2 = (min / 60) + (seg / 3600);
+      seg2 = (min * 60) + seg;
+      cout << "El atleta " << i << ", se demoro en horas = " << horas2 << "h" << endl; 
+      cout << "En minutos = " << min2 << "m" << endl;
+      cout << "En segundos = " << seg2 << "s" << endl;
+    }
+  return 0;
+}
